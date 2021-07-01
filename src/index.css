@@ -1,0 +1,7 @@
+html {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+.Toastify__toast-container--top-right{
+	top : 3em !important
+}

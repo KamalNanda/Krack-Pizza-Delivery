@@ -1,0 +1,110 @@
+.Body {
+	/* background-color: #ddd; */
+	display: inline-block;
+	padding: 0;
+	border-radius: 8px;
+	margin: 8px 32px 8px 0;
+	width: 250px;
+	overflow: hidden;
+	transition: 0.2s;
+	/* box-shadow: 0 1px 2px black; */
+} 
+.ImgContainer {
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.itemName{
+	font-size: 20px;
+}
+.ImgContainer .Image {
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	transition: 0.2s;
+}
+
+.Body:hover .ImgContainer .Image {
+	transform: scale(1.2);
+}
+
+.Description {
+	display: inline-block; 
+	line-height: 100%;
+	margin-bottom: 12px;
+	font-size: 18px;
+}
+
+.Row {
+	display: flex;
+}
+
+.Price {
+	width: max-content;
+	font-size: 24px;
+	font-weight: 600;
+}
+.Price span{
+	font-size: 36px;
+}
+
+.BtnHolder {
+	display: inline-block;
+	width: max-content;
+	display: flex;
+}
+
+.ItemActionBtn { 
+	width: fit-content;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: blue;
+	font-weight: 600;
+	font-size: 16px;
+	border: 2px solid blue;
+	outline: none !important;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+	transition: 0.1s;
+}
+
+.ItemActionBtn:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+}
+
+/* media queries */
+@media (max-width: 1400px) {
+	.Body {
+		margin: 8px 40px 8px 0;
+		width: 200px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.Body {
+		margin: 8px 16px 8px 0;
+		width: 185px;
+	}
+}
+
+@media (max-width: 992px) {
+	.Body {
+		margin: 8px 24px 8px 0;
+		width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.Body {
+		margin: 8px 0;
+		width: 100%;
+	}
+}

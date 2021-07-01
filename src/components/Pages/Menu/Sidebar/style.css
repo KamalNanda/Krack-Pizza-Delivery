@@ -1,0 +1,12 @@
+.side-bar{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar p{
+    color: blue;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    width: fit-content;
+}
